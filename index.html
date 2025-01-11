@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <title>Copy</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#F0553D",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <footer class="bg-[#1E1A3C] text-white">
+      <div class="container mx-auto px-5">
+        <div
+          class="flex flex-col sm:flex-row justify-between items-center lg:py-16 py-10 border-b border-white gap-6"
+        >
+          <a href="/">
+            <img
+              class="w-full lg:max-w-[500px] max-w-[300px]"
+              src="./assets/img/logo.png"
+              alt="logo"
+            />
+          </a>
+          <button
+            class="py-2 lg:py-3 px-5 bg-primary hover:text-primary transition-all duration-200 ease-in-out hover:bg-white group text-white font-bold flex gap-3 items-center uppercase"
+          >
+            Get A Quote
+            <span>
+              <svg
+                width="20"
+                height="16"
+                viewBox="0 0 10 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="group-hover:fill-primary transition-all duration-200 ease-in-out"
+                  d="M0 3.98129C0 3.78238 0.0790177 3.59161 0.21967 3.45096C0.360322 3.31031 0.551088 3.23129 0.75 3.23129H6.69L4.72 1.26129C4.58752 1.11912 4.5154 0.93107 4.51883 0.736769C4.52225 0.542468 4.60097 0.357083 4.73838 0.21967C4.87579 0.0822571 5.06118 0.00354506 5.25548 0.000116847C5.44978 -0.00331137 5.63783 0.0688118 5.78 0.201292L9.03 3.45129C9.17045 3.59192 9.24934 3.78254 9.24934 3.98129C9.24934 4.18004 9.17045 4.37067 9.03 4.51129L5.78 7.76129C5.63783 7.89377 5.44978 7.9659 5.25548 7.96247C5.06118 7.95904 4.87579 7.88033 4.73838 7.74291C4.60097 7.6055 4.52225 7.42011 4.51883 7.22581C4.5154 7.03151 4.58752 6.84347 4.72 6.70129L6.69 4.73129H0.75C0.551088 4.73129 0.360322 4.65227 0.21967 4.51162C0.0790177 4.37097 0 4.1802 0 3.98129Z"
+                  fill="white"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row justify-between pb-10 lg:mb-8 gap-5"
+        >
+          <ul class="mt-4 sm:py-3">
+            <p
+              class="lg:text-[24px] text-[21px] font-bold text-primary pb-3 pt-5"
+            >
+              Contact Us
+            </p>
+            <li class="ff_redhat py-3 flex items-center lg:gap-3 gap-5">
+              <span
+                class="lg:w-[28px] lg:h-[28px] w-[25px] h-[25px] inline-block"
+              >
+                <svg
+                  fill="#F0553D"
+                  width="28"
+                  height="28"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  id="Capa_1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 473.806 473.806"
+                  style="enable-background: new 0 0 473.806 473.806"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M374.456,293.506c-9.7-10.1-21.4-15.5-33.8-15.5c-12.3,0-24.1,5.3-34.2,15.4l-31.6,31.5c-2.6-1.4-5.2-2.7-7.7-4   c-3.6-1.8-7-3.5-9.9-5.3c-29.6-18.8-56.5-43.3-82.3-75c-12.5-15.8-20.9-29.1-27-42.6c8.2-7.5,15.8-15.3,23.2-22.8   c2.8-2.8,5.6-5.7,8.4-8.5c21-21,21-48.2,0-69.2l-27.3-27.3c-3.1-3.1-6.3-6.3-9.3-9.5c-6-6.2-12.3-12.6-18.8-18.6   c-9.7-9.6-21.3-14.7-33.5-14.7s-24,5.1-34,14.7c-0.1,0.1-0.1,0.1-0.2,0.2l-34,34.3c-12.8,12.8-20.1,28.4-21.7,46.5   c-2.4,29.2,6.2,56.4,12.8,74.2c16.2,43.7,40.4,84.2,76.5,127.6c43.8,52.3,96.5,93.6,156.7,122.7c23,10.9,53.7,23.8,88,26   c2.1,0.1,4.3,0.2,6.3,0.2c23.1,0,42.5-8.3,57.7-24.8c0.1-0.2,0.3-0.3,0.4-0.5c5.2-6.3,11.2-12,17.5-18.1c4.3-4.1,8.7-8.4,13-12.9   c9.9-10.3,15.1-22.3,15.1-34.6c0-12.4-5.3-24.3-15.4-34.3L374.456,293.506z M410.256,398.806   C410.156,398.806,410.156,398.906,410.256,398.806c-3.9,4.2-7.9,8-12.2,12.2c-6.5,6.2-13.1,12.7-19.3,20   c-10.1,10.8-22,15.9-37.6,15.9c-1.5,0-3.1,0-4.6-0.1c-29.7-1.9-57.3-13.5-78-23.4c-56.6-27.4-106.3-66.3-147.6-115.6   c-34.1-41.1-56.9-79.1-72-119.9c-9.3-24.9-12.7-44.3-11.2-62.6c1-11.7,5.5-21.4,13.8-29.7l34.1-34.1c4.9-4.6,10.1-7.1,15.2-7.1   c6.3,0,11.4,3.8,14.6,7c0.1,0.1,0.2,0.2,0.3,0.3c6.1,5.7,11.9,11.6,18,17.9c3.1,3.2,6.3,6.4,9.5,9.7l27.3,27.3   c10.6,10.6,10.6,20.4,0,31c-2.9,2.9-5.7,5.8-8.6,8.6c-8.4,8.6-16.4,16.6-25.1,24.4c-0.2,0.2-0.4,0.3-0.5,0.5   c-8.6,8.6-7,17-5.2,22.7c0.1,0.3,0.2,0.6,0.3,0.9c7.1,17.2,17.1,33.4,32.3,52.7l0.1,0.1c27.6,34,56.7,60.5,88.8,80.8   c4.1,2.6,8.3,4.7,12.3,6.7c3.6,1.8,7,3.5,9.9,5.3c0.4,0.2,0.8,0.5,1.2,0.7c3.4,1.7,6.6,2.5,9.9,2.5c8.3,0,13.5-5.2,15.2-6.9   l34.2-34.2c3.4-3.4,8.8-7.5,15.1-7.5c6.2,0,11.3,3.9,14.4,7.3c0.1,0.1,0.1,0.1,0.2,0.2l55.1,55.1   C420.456,377.706,420.456,388.206,410.256,398.806z"
+                      ></path>
+                      <path
+                        d="M256.056,112.706c26.2,4.4,50,16.8,69,35.8s31.3,42.8,35.8,69c1.1,6.6,6.8,11.2,13.3,11.2c0.8,0,1.5-0.1,2.3-0.2   c7.4-1.2,12.3-8.2,11.1-15.6c-5.4-31.7-20.4-60.6-43.3-83.5s-51.8-37.9-83.5-43.3c-7.4-1.2-14.3,3.7-15.6,11   S248.656,111.506,256.056,112.706z"
+                      ></path>
+                      <path
+                        d="M473.256,209.006c-8.9-52.2-33.5-99.7-71.3-137.5s-85.3-62.4-137.5-71.3c-7.3-1.3-14.2,3.7-15.5,11   c-1.2,7.4,3.7,14.3,11.1,15.6c46.6,7.9,89.1,30,122.9,63.7c33.8,33.8,55.8,76.3,63.7,122.9c1.1,6.6,6.8,11.2,13.3,11.2   c0.8,0,1.5-0.1,2.3-0.2C469.556,223.306,474.556,216.306,473.256,209.006z"
+                      ></path>
+                    </g>
+                  </g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
+              </span>
+              <a
+                class="lg:text-[20px] text-base font-normal"
+                href="tel:07885810540"
+              >
+                07885 810540
+              </a>
+            </li>
+            <li class="ff_redhat py-3 flex items-center lg:gap-3 gap-5">
+              <span
+                class="lg:w-[28px] lg:h-[28px] w-[25px] h-[25px] inline-block"
+              >
+                <svg
+                  width="28"
+                  fill="#F0553D"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  id="Capa_1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 512 512"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M511.99,224.592c0.001-2.042-0.61-4.103-1.904-5.881c-0.448-0.615-0.957-1.158-1.506-1.639   c0.002-0.001,0.003-0.002,0.005-0.004l-34.511-30.203c7.436-5.988,12.206-15.158,12.206-25.426v-16.41c0-44.112-35.888-80-80-80   s-80,35.888-80,80s35.888,80,80,80c5.523,0,10-4.477,10-10s-4.477-10-10-10c-33.084,0-60-26.916-60-60s26.916-60,60-60   s60,26.916,60,60v16.41c0,6.97-5.67,12.64-12.641,12.64c-6.97,0-12.64-5.67-12.64-12.64v-13.818v-28.75   c0-2.75-1.132-5.378-3.13-7.267c-8.578-8.109-19.796-12.575-31.589-12.575c-25.364,0-46,20.636-46,46s20.636,46,46,46   c8.582,0,16.855-2.376,24.033-6.79c5.739,5.87,13.666,9.584,22.449,9.818c0.537,0.938,1.227,1.808,2.086,2.56l31.144,27.256   L406,282.068v-26.07c0-5.523-4.477-10-10-10s-10,4.477-10,10v40.62l-74.654,54.311l-49.463-35.984   c-3.507-2.552-8.259-2.552-11.766,0l-49.463,35.984L26.442,224.188l56.903-49.799c4.156-3.637,4.576-9.955,0.939-14.111   c-3.638-4.156-9.955-4.576-14.111-0.939L3.688,216.838c-0.004,0.004-0.008,0.007-0.012,0.011C1.433,218.683,0,221.47,0,224.593   v277.404c0,5.523,4.477,10,10,10h492c5.523,0,10-4.477,10-10V224.593C511.997,224.593,511.993,224.592,511.99,224.592z    M421,147.622v13.818v5.015c-4.308,2.971-9.412,4.574-14.719,4.574c-14.336,0-26-11.664-26-26s11.664-26,26-26   c5.308,0,10.411,1.603,14.719,4.574V147.622z M20,244.234l163.656,119.061L20,482.356V244.234z M40.744,491.997L256,335.397   l215.256,156.6H40.744z M492,482.356L328.344,363.295L492,244.234V482.356z"
+                      ></path>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M337.347,67.239l-74.799-64.8c-3.8-3.293-9.368-3.201-13.065-0.012c-0.003-0.003-0.005-0.005-0.008-0.008l-36,31   c-4.185,3.604-4.656,9.918-1.052,14.103c1.978,2.297,4.771,3.475,7.582,3.475c2.311,0,4.633-0.796,6.521-2.422l29.456-25.365   l48.271,41.818H116c-5.523,0-10,4.477-10,10v143.969c0,5.523,4.477,10,10,10s10-4.477,10-10V85.029h204.799   c-0.033-0.083-0.058-0.155-0.09-0.236c0.028,0,0.057,0.004,0.085,0.004c2.8,0,5.585-1.17,7.563-3.452   C341.973,77.171,341.521,70.855,337.347,67.239z"
+                      ></path>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M257.393,165.997h-99.976c-5.523,0-10,4.477-10,10c0,5.523,4.477,10,10,10h99.976c5.523,0,10-4.477,10-10   C267.393,170.474,262.916,165.997,257.393,165.997z"
+                      ></path>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M256,115.997h-98.583c-5.523,0-10,4.477-10,10c0,5.523,4.477,10,10,10H256c5.523,0,10-4.477,10-10   C266,120.474,261.523,115.997,256,115.997z"
+                      ></path>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M123.07,252.257c-1.86-1.86-4.44-2.93-7.07-2.93s-5.21,1.07-7.07,2.93c-1.86,1.86-2.93,4.44-2.93,7.07   c0,2.64,1.07,5.21,2.93,7.07c1.86,1.871,4.44,2.93,7.07,2.93s5.21-1.06,7.07-2.93c1.86-1.86,2.93-4.43,2.93-7.07   C126,256.697,124.93,254.117,123.07,252.257z"
+                      ></path>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M323.589,215.289H304c-5.523,0-10,4.477-10,10s4.477,10,10,10h19.589c5.523,0,10-4.477,10-10   S329.112,215.289,323.589,215.289z"
+                      ></path>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M259.811,215.289h-0.11c-5.523,0-10,4.477-10,10s4.477,10,10,10h0.11c5.522,0,10-4.477,10-10   S265.334,215.289,259.811,215.289z"
+                      ></path>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M212,215.289h-54.633c-5.523,0-10,4.477-10,10s4.477,10,10,10H212c5.523,0,10-4.477,10-10S217.523,215.289,212,215.289z"
+                      ></path>
+                    </g>
+                  </g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
+              </span>
+              <a
+                class="lg:text-[20px] text-base font-normal"
+                href="mailto:info@southamptonroofrepairs.uk"
+              >
+                info@southamptonroofrepairs.uk
+              </a>
+            </li>
+            <li class="ff_redhat py-3 flex items-center lg:gap-3 gap-5">
+              <span
+                class="lg:w-[28px] lg:h-[28px] w-[25px] h-[25px] inline-block"
+              >
+                <svg
+                  fill="#F0553D"
+                  width="28"
+                  height="28"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  id="Capa_1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 512 512"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  width="512"
+                  height="512"
+                >
+                  <g>
+                    <path
+                      d="M142.752,437.13c30.45,8.602,70.669,13.34,113.248,13.34s82.798-4.737,113.248-13.34   c37.253-10.523,56.142-25.757,56.142-45.275c0-19.519-18.889-34.751-56.142-45.274c-17.023-4.809-37.108-8.403-58.944-10.644   c42.761-72.986,85.136-155.627,85.136-196.498C395.44,62.552,332.888,0,256,0S116.56,62.552,116.56,139.439   c0,40.87,42.374,123.509,85.135,196.495c-21.836,2.241-41.918,5.837-58.942,10.647c-37.253,10.523-56.142,25.756-56.142,45.274   C86.61,411.373,105.499,426.606,142.752,437.13z M256,30c60.346,0,109.44,49.094,109.44,109.439   c0,30.996-38.352,112.248-102.59,217.35c-2.122,3.472-5.498,3.846-6.851,3.846c-1.352,0-4.729-0.374-6.851-3.846   c-64.238-105.102-102.59-186.353-102.59-217.35C146.56,79.094,195.654,30,256,30z M156.355,373.988   c17.885-4.555,39.314-7.752,62.413-9.415c1.603,2.644,3.198,5.266,4.783,7.859c6.966,11.398,19.096,18.201,32.448,18.201   c13.353,0,25.482-6.804,32.448-18.201c1.585-2.594,3.181-5.216,4.784-7.86c23.099,1.663,44.527,4.861,62.413,9.416   c27.416,6.983,37.432,14.844,39.491,17.866c-2.06,3.023-12.074,10.884-39.49,17.866c-27.213,6.932-62.602,10.749-99.646,10.749   s-72.433-3.817-99.645-10.749c-27.416-6.982-37.431-14.844-39.49-17.866C118.924,388.832,128.939,380.972,156.355,373.988z"
+                    ></path>
+                    <path
+                      d="M468.329,358.972c-7.263-3.989-16.382-1.336-20.369,5.924c-3.989,7.261-1.337,16.381,5.924,20.369   C471.752,395.081,482,405.963,482,415.121c0,11.201-15.87,28.561-60.413,43.694C377.582,473.767,318.775,482,256,482   s-121.582-8.233-165.587-23.185C45.87,443.683,30,426.322,30,415.121c0-9.158,10.248-20.04,28.116-29.857   c7.261-3.988,9.913-13.108,5.924-20.369c-3.989-7.26-13.106-9.913-20.369-5.924C23.749,369.916,0,388.542,0,415.121   c0,20.374,14.012,49.422,80.762,72.1C127.794,503.2,190.028,512,256,512s128.206-8.8,175.238-24.779   c66.75-22.678,80.762-51.726,80.762-72.1C512,388.542,488.251,369.916,468.329,358.972z"
+                    ></path>
+                    <path
+                      d="M312.047,129.865c0-30.903-25.143-56.045-56.047-56.045s-56.047,25.142-56.047,56.045   c0,30.904,25.143,56.046,56.047,56.046S312.047,160.77,312.047,129.865z M229.953,129.865c0-14.361,11.685-26.045,26.047-26.045   s26.047,11.684,26.047,26.045c0,14.361-11.685,26.046-26.047,26.046S229.953,144.227,229.953,129.865z"
+                    ></path>
+                  </g>
+                </svg>
+              </span>
+              <span class="lg:text-[20px] text-base font-normal">
+                The Old Bungalow, Woodhouse Lane, Hedge End, Southampton, SO30
+                2EZ
+              </span>
+            </li>
+          </ul>
+          <ul
+            class="sm:mt-4 sm:py-3 min-w-[200px] flex flex-col gap-2 lg:gap-0"
+          >
+            <p
+              class="lg:text-[24px] text-[21px] font-bold text-primary pb-3 pt-5"
+            >
+              Services
+            </p>
+            <li class="ff_redhat flex items-center gap-3">
+              <a
+                class="lg:text-[18px] text-[15px] font-normal hover:text-primary transition-all duration-200 ease-in-out"
+                href="tel:07885810540"
+              >
+                Roof Repairs
+              </a>
+            </li>
+            <li class="ff_redhat flex items-center gap-3">
+              <a
+                class="lg:text-[18px] text-[15px] font-normal hover:text-primary transition-all duration-200 ease-in-out"
+                href="mailto:info@southamptonroofrepairs.uk"
+              >
+                Pitched Roofs
+              </a>
+            </li>
+            <li class="ff_redhat flex items-center gap-3">
+              <a
+                class="lg:text-[18px] text-[15px] font-normal hover:text-primary transition-all duration-200 ease-in-out"
+                href="mailto:info@southamptonroofrepairs.uk"
+              >
+                Flat Roofing
+              </a>
+            </li>
+            <li class="ff_redhat flex items-center gap-3">
+              <a
+                class="lg:text-[18px] text-[15px] font-normal hover:text-primary transition-all duration-200 ease-in-out"
+                href="mailto:info@southamptonroofrepairs.uk"
+              >
+                Commercial Roofing
+              </a>
+            </li>
+            <li class="ff_redhat flex items-center gap-3">
+              <a
+                class="lg:text-[18px] text-[15px] font-normal hover:text-primary transition-all duration-200 ease-in-out"
+                href="mailto:info@southamptonroofrepairs.uk"
+              >
+                Chimney Works
+              </a>
+            </li>
+            <li class="ff_redhat flex items-center gap-3">
+              <a
+                class="lg:text-[18px] text-[15px] font-normal hover:text-primary transition-all duration-200 ease-in-out"
+                href="mailto:info@southamptonroofrepairs.uk"
+              >
+                Fascias, Soffits & Guttering
+              </a>
+            </li>
+          </ul>
+          <ul
+            class="sm:mt-4 sm:py-3 min-w-[180px] flex flex-col gap-2 lg:gap-0"
+          >
+            <p
+              class="lg:text-[24px] text-[21px] font-bold text-primary pb-3 pt-5"
+            >
+              Helpful Links
+            </p>
+            <li class="ff_redhat flex items-center gap-3">
+              <a
+                class="lg:text-[18px] text-[15px] font-normal hover:text-primary transition-all duration-200 ease-in-out"
+                href="tel:07885810540"
+              >
+                About Us
+              </a>
+            </li>
+            <li class="ff_redhat flex items-center gap-3">
+              <a
+                class="lg:text-[18px] text-[15px] font-normal hover:text-primary transition-all duration-200 ease-in-out"
+                href="mailto:info@southamptonroofrepairs.uk"
+              >
+                Testimonials
+              </a>
+            </li>
+            <li class="ff_redhat flex items-center gap-3">
+              <a
+                class="lg:text-[18px] text-[15px] font-normal hover:text-primary transition-all duration-200 ease-in-out"
+                href="mailto:info@southamptonroofrepairs.uk"
+              >
+                Contact Us
+              </a>
+            </li>
+            <li class="ff_redhat flex items-center gap-3">
+              <a
+                class="lg:text-[18px] text-[15px] font-normal hover:text-primary transition-all duration-200 ease-in-out"
+                href="mailto:info@southamptonroofrepairs.uk"
+              >
+                Cookies Policy
+              </a>
+            </li>
+            <li class="ff_redhat flex items-center gap-3">
+              <a
+                class="lg:text-[18px] text-[15px] font-normal hover:text-primary transition-all duration-200 ease-in-out"
+                href="mailto:info@southamptonroofrepairs.uk"
+              >
+                Terms & Conditions
+              </a>
+            </li>
+            <li class="ff_redhat flex items-center gap-3">
+              <a
+                class="lg:text-[18px] text-[15px] font-normal hover:text-primary transition-all duration-200 ease-in-out"
+                href="mailto:info@southamptonroofrepairs.uk"
+              >
+                Privacy Policy
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="text-center py-5 ff_redhat text-[13px]">
+          © <span id="current_year"></span> Southampton Roof Repairs. All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
+    <script>
+      const year = document.getElementById("current_year");
+      year.innerHTML = new Date().getFullYear();
+    </script>
+  </body>
+</html>
