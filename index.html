@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/style/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+
     <title>Copy</title>
     <script>
       tailwind.config = {
@@ -19,8 +30,146 @@
     </script>
   </head>
   <body>
+    <!-- GALLERY SECTION -->
+    <section class="sm:py-20 py-16">
+      <div class="container mx-auto px-5 2xl:max-w-[1240px] xl:py-5">
+        <div class="flex flex-col lg:flex-row gap-8 items-center">
+          <div
+            class="overflow-hidden w-full relative sm:ps-4 ps-1 sm:pe-4 pe-2 lg:pe-0"
+          >
+            <div
+              class="absolute h-full w-[100px] bg-primary top-0 left-0"
+            ></div>
+            <div class="slider-for sm:px-2 px-1 sm:mt-5 mt-2">
+              <div>
+                <img
+                  class="w-full sm:h-[400px] h-[200px] object-cover"
+                  src="./assets/img/gallery-1.jpg"
+                  alt="gallery-1"
+                />
+              </div>
+              <div>
+                <img
+                  class="w-full sm:h-[400px] h-[200px] object-cover"
+                  src="./assets/img/gallery-2.jpg"
+                  alt="gallery-2"
+                />
+              </div>
+              <div>
+                <img
+                  class="w-full sm:h-[400px] h-[200px] object-cover"
+                  src="./assets/img/gallery-3.jpg"
+                  alt="gallery-3"
+                />
+              </div>
+              <div>
+                <img
+                  class="w-full sm:h-[400px] h-[200px] object-cover"
+                  src="./assets/img/gallery-4.jpg"
+                  alt="gallery-4"
+                />
+              </div>
+              <div>
+                <img
+                  class="w-full sm:h-[400px] h-[200px] object-cover"
+                  src="./assets/img/gallery-5.jpg"
+                  alt="gallery-5"
+                />
+              </div>
+              <div>
+                <img
+                  class="w-full sm:h-[400px] h-[200px] object-cover"
+                  src="./assets/img/gallery-6.jpg"
+                  alt="gallery-6"
+                />
+              </div>
+            </div>
+            <div class="slider-nav sm:mb-2">
+              <div class="sm:px-[6px] px-1 sm:py-3 py-2">
+                <img
+                  class="w-full sm:h-[96px] h-[70px] object-cover"
+                  src="./assets/img/gallery-1.jpg"
+                  alt="gallery-1"
+                />
+              </div>
+              <div class="sm:px-[6px] px-1 sm:py-3 py-2">
+                <img
+                  class="w-full sm:h-[96px] h-[70px] object-cover"
+                  src="./assets/img/gallery-2.jpg"
+                  alt="gallery-2"
+                />
+              </div>
+              <div class="sm:px-[6px] px-1 sm:py-3 py-2">
+                <img
+                  class="w-full sm:h-[96px] h-[70px] object-cover"
+                  src="./assets/img/gallery-3.jpg"
+                  alt="gallery-3"
+                />
+              </div>
+              <div class="sm:px-[6px] px-1 sm:py-3 py-2">
+                <img
+                  class="w-full sm:h-[96px] h-[70px] object-cover"
+                  src="./assets/img/gallery-4.jpg"
+                  alt="gallery-4"
+                />
+              </div>
+              <div class="sm:px-[6px] px-1 sm:py-3 py-2">
+                <img
+                  class="w-full sm:h-[96px] h-[70px] object-cover"
+                  src="./assets/img/gallery-5.jpg"
+                  alt="gallery-5"
+                />
+              </div>
+              <div class="sm:px-[6px] px-1 sm:py-3 py-2">
+                <img
+                  class="w-full sm:h-[96px] h-[70px] object-cover"
+                  src="./assets/img/gallery-6.jpg"
+                  alt="gallery-6"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="lg:ps-12 sm:ps-5 ps-2 sm:pe-5 lg:pe-0 w-full">
+            <p
+              class="lg:text-[24px] text-[21px] text-primary ff_redhat font-bold"
+            >
+              Our Portfolio
+            </p>
+            <h2 class="lg:text-[64px] text-[48px] font-bold">Gallery</h2>
+            <p
+              class="lg:text-[18px] sm:text-base text-[14px] text-[#4B4B4B] font-normal py-2"
+            >
+              They say a picture is worth a thousand words, so we decided to
+              create a compilation of images from the work we’ve carried out
+              over the years. Please take a look at our gallery; hopefully,
+              these high-definition images will convince you that we’re the
+              roofing company for you.
+            </p>
+            <p
+              class="lg:text-[18px] sm:text-base text-[14px] text-[#4B4B4B] font-normal py-2 lg:mt-3 sm:mt-1"
+            >
+              Once you’re done, if you’re ready to reach out to us, give the
+              team at Southampton Roof Repairs a call at your earliest
+              convenience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER SECTION -->
+    <div class="bg-primary text-white py-12">
+      <div class="container mx-auto px-5 2xl:max-w-[1240px]">
+        <p
+          class="text-center lg:text-[45px] sm:text-[32px] text-[25px] font-medium lg:leading-[1.3em]"
+        >
+          From roof repairs to new installations, we do it all. To request our
+          services, call
+          <a href="" class="font-bold underline"> 07885 810540 </a>
+        </p>
+      </div>
+    </div>
     <footer class="bg-[#1E1A3C] text-white">
-      <div class="container mx-auto px-5">
+      <div class="container mx-auto px-5 2xl:max-w-[1240px]">
         <div
           class="flex flex-col sm:flex-row justify-between items-center lg:py-16 py-10 border-b border-white gap-6"
         >
@@ -370,9 +519,42 @@
         </p>
       </div>
     </footer>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+
     <script>
       const year = document.getElementById("current_year");
       year.innerHTML = new Date().getFullYear();
+
+      // GALLERY SLIDER
+      $(".slider-for").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: ".slider-nav",
+      });
+      $(".slider-nav").slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: ".slider-for",
+        dots: false,
+        arrows: false,
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 3,
+            },
+          },
+        ],
+      });
     </script>
   </body>
 </html>
