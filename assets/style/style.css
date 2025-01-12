@@ -11,3 +11,6 @@ body {
 .ff_redhat {
   font-family: "Red Hat Display", serif;
 }
+.slick-disabled {
+  pointer-events: none;
+}
