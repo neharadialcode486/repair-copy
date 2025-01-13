@@ -33,13 +33,143 @@
     <!-- SIDEBAR -->
     <div
       id="sidebar"
-      class="bg-primary fixed right-[-300px] top-0 w-[300px] h-screen z-40 transition-all duration-200 ease-in-out"
+      class="bg-[#1E1A3C] fixed right-[-300px] top-0 w-[300px] h-screen z-40 transition-all duration-200 ease-in-out ps-8 pe-6 py-6"
     >
-      <h2 id="closeSidebar">close</h2>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-      dolores quidem sint, minima molestias reiciendis? Omnis tenetur deserunt
-      dignissimos natus illo placeat quod enim ad deleniti cumque molestiae, quo
-      maxime.
+      <span id="closeSidebar" class="cursor-pointer max-w-[16px] ms-auto block">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_4007_7694)">
+            <path
+              d="M12.648 0.572777L8 5.22103C6.45075 3.67228 4.901 2.12203 3.3515 0.572777C1.559 -1.21972 -1.2195 1.55978 0.571496 3.35278C2.12125 4.90103 3.6715 6.45153 5.2195 8.00078C3.67079 9.55073 2.12145 11.1001 0.571496 12.6488C-1.2195 14.4408 1.55925 17.2195 3.3515 15.4288C4.901 13.8788 6.45041 12.3293 7.99975 10.7803L12.6477 15.4288C14.4402 17.2208 17.2195 14.441 15.4277 12.6488C13.8782 11.0991 12.3285 9.54961 10.7785 8.00028C12.3282 6.45044 13.8779 4.90078 15.4277 3.35128C17.2197 1.55978 14.4405 -1.21972 12.6477 0.573777"
+              fill="white"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_4007_7694">
+              <rect width="16" height="16" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </span>
+      <a href="/" class="pb-5 pt-7 inline-block">
+        <img class="w-full" src="./assets/img/logo.png" alt="logo" />
+      </a>
+      <ul>
+        <li>
+          <a
+            class="text-base ff_redhat font-bold hover:text-primary text-white inline-block py-3"
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            class="text-base ff_redhat font-bold hover:text-primary text-white inline-block py-3"
+            href="#about"
+          >
+            About Us
+          </a>
+        </li>
+        <li>
+          <div class="relative">
+            <p
+              id="service_drop_down_toggle"
+              class="text-base ff_redhat font-bold hover:text-primary text-white py-3 cursor-pointer flex gap-3 items-center"
+            >
+              Services
+              <span>
+                <svg
+                  width="12"
+                  height="6"
+                  viewBox="0 0 12 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0.56L0.413 0L11.607 0L12 0.54L6.373 6H5.546L0 0.56Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+            </p>
+            <ul
+              id="content"
+              class="bg-primary absolute top-[50px] z-10 min-w-[220px] left-0 text-white hidden"
+            >
+              <li class="px-5 py-3 hover:bg-[#1E1A3C]">
+                <a
+                  href="https://southamptonroofrepairs.uk/roof-repairs/"
+                  class="text-[13px] font-medium"
+                  >Roof Repairs</a
+                >
+              </li>
+              <li class="px-5 py-3 hover:bg-[#1E1A3C]">
+                <a
+                  href="https://southamptonroofrepairs.uk/pitched-roofs/"
+                  class="text-[13px] font-medium"
+                  >Pitched Roofs</a
+                >
+              </li>
+              <li class="px-5 py-3 hover:bg-[#1E1A3C]">
+                <a
+                  href="https://southamptonroofrepairs.uk/flat-roofing/"
+                  class="text-[13px] font-medium"
+                >
+                  Flat Roofing</a
+                >
+              </li>
+              <li class="px-5 py-3 hover:bg-[#1E1A3C]">
+                <a
+                  href="https://southamptonroofrepairs.uk/commercial-roofing/"
+                  class="text-[13px] font-medium"
+                >
+                  Commercial Roofing</a
+                >
+              </li>
+              <li class="px-5 py-3 hover:bg-[#1E1A3C]">
+                <a
+                  href="https://southamptonroofrepairs.uk/chimney-works/"
+                  class="text-[13px] font-medium"
+                >
+                  Chimney Works</a
+                >
+              </li>
+              <li class="px-5 py-3 hover:bg-[#1E1A3C]">
+                <a
+                  href="https://southamptonroofrepairs.uk/fascias-soffits-guttering/"
+                  class="text-[13px] font-medium"
+                  >Fascias Soffits Guttering</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a
+            class="text-base ff_redhat font-bold hover:text-primary text-white inline-block py-3"
+            href="#testimonials"
+          >
+            Testimonials
+          </a>
+        </li>
+        <li>
+          <a
+            class="text-base ff_redhat font-bold hover:text-primary text-white inline-block py-3"
+            href="#contact"
+          >
+            Contact Us
+          </a>
+        </li>
+        <li class="text-[20px] ff_redhat font-bold text-white py-3">
+          Tel: <a class="text-primary" href="tel:02380 123456">02380 123456</a>
+        </li>
+      </ul>
     </div>
     <!-- HEADER SECTION -->
     <nav>
