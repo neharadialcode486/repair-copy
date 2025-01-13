@@ -30,6 +30,278 @@
     </script>
   </head>
   <body>
+    <!-- SIDEBAR -->
+    <div
+      id="sidebar"
+      class="bg-primary fixed right-[-300px] top-0 w-[300px] h-screen z-40 transition-all duration-200 ease-in-out"
+    >
+      <h2 id="closeSidebar">close</h2>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+      dolores quidem sint, minima molestias reiciendis? Omnis tenetur deserunt
+      dignissimos natus illo placeat quod enim ad deleniti cumque molestiae, quo
+      maxime.
+    </div>
+    <!-- HEADER SECTION -->
+    <nav>
+      <div class="bg-[#1E1A3C] sm:hidden fixed top-0 left-0 w-full z-30">
+        <p class="text-[19px] font-bold text-white text-center py-2">
+          Call today:
+          <a class="text-primary" href="tel:07885810540">07885 810540</a>
+        </p>
+      </div>
+      <div
+        class="container mx-auto px-5 2xl:max-w-[1240px] flex justify-between items-center sm:py-5 !relative lg:h-[166px] sm:h-[130px] pt-16"
+      >
+        <a href="/">
+          <img
+            class="w-full lg:max-w-[380px] sm:max-w-[200px] max-w-[150px]"
+            src="./assets/img/light-logo.png"
+            alt="logo"
+          />
+        </a>
+        <div class="sm:hidden">
+          <button
+            id="openSidebar"
+            class="text-[12px] ff_redhat font-normal text-white uppercase bg-primary px-4 py-2 flex gap-3 items-center"
+          >
+            <span
+              ><svg
+                class="w-[20px] h-[20px]"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:svgjs="http://svgjs.com/svgjs"
+                width="512"
+                height="512"
+                x="0"
+                y="0"
+                viewBox="0 0 512 512"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    xmlns="http://www.w3.org/2000/svg"
+                    d="m128 102.4c0-14.138 11.462-25.6 25.6-25.6h332.8c14.138 0 25.6 11.462 25.6 25.6s-11.462 25.6-25.6 25.6h-332.8c-14.138 0-25.6-11.463-25.6-25.6zm358.4 128h-460.8c-14.138 0-25.6 11.463-25.6 25.6 0 14.138 11.462 25.6 25.6 25.6h460.8c14.138 0 25.6-11.462 25.6-25.6 0-14.137-11.462-25.6-25.6-25.6zm0 153.6h-230.4c-14.137 0-25.6 11.462-25.6 25.6 0 14.137 11.463 25.6 25.6 25.6h230.4c14.138 0 25.6-11.463 25.6-25.6 0-14.138-11.462-25.6-25.6-25.6z"
+                    fill="#ffffff"
+                    data-original="#000000"
+                  ></path>
+                </g>
+              </svg>
+            </span>
+            Menu
+          </button>
+        </div>
+        <div
+          class="sm:flex hidden items-center gap-4 top-[0%] pt-5 left-[52%] ps-3 rounded-b-[20px] bg-white z-20 transition-all duration-300 ease-in-out absolute"
+          id="scroll-fixed"
+        >
+          <div class="text-end">
+            <p
+              class="uppercase lg:text-[26px] text-[18px] text-[#1E1A3C] font-bold sm:leading-[10px]"
+            >
+              Call Today
+            </p>
+            <a
+              class="lg:text-[45px] sm:text-[25px] text-nowrap text-[30px] font-bold text-primary"
+              href="tel:07885810540"
+              >07885 810540</a
+            >
+          </div>
+          <div>
+            <img
+              class="w-full lg:max-w-[200px] max-w-[150px]"
+              src="./assets/img/car.png"
+              alt="car"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#1E1A3C] hidden sm:block">
+        <div
+          class="container mx-auto px-5 2xl:max-w-[1240px] flex justify-between items-center"
+        >
+          <div class="flex">
+            <a
+              class="text-white text-[15px] font-bold hover:bg-primary block lg:py-4 py-3 lg:px-6 px-4"
+              href="/"
+              >Home</a
+            >
+            <a
+              class="text-white text-[15px] font-bold hover:bg-primary block lg:py-4 py-3 lg:px-6 px-4"
+              href="#about"
+              >About Us</a
+            >
+            <div class="relative">
+              <p
+                id="service_drop_down_toggle"
+                class="text-white text-[15px] font-bold hover:bg-primary lg:py-4 py-3 lg:px-6 px-4 flex gap-2 items-center cursor-pointer"
+              >
+                Services
+                <span>
+                  <svg
+                    width="12"
+                    height="6"
+                    viewBox="0 0 12 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0.56L0.413 0L11.607 0L12 0.54L6.373 6H5.546L0 0.56Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+              </p>
+
+              <ul
+                id="content"
+                class="bg-[#1E1A3C] absolute top-[50px] z-10 min-w-[220px] left-0 text-white hidden"
+              >
+                <li class="px-5 py-3 hover:bg-primary">
+                  <a
+                    href="https://southamptonroofrepairs.uk/roof-repairs/"
+                    class="text-[13px] font-medium"
+                    >Roof Repairs</a
+                  >
+                </li>
+                <li class="px-5 py-3 hover:bg-primary">
+                  <a
+                    href="https://southamptonroofrepairs.uk/pitched-roofs/"
+                    class="text-[13px] font-medium"
+                    >Pitched Roofs</a
+                  >
+                </li>
+                <li class="px-5 py-3 hover:bg-primary">
+                  <a
+                    href="https://southamptonroofrepairs.uk/flat-roofing/"
+                    class="text-[13px] font-medium"
+                  >
+                    Flat Roofing</a
+                  >
+                </li>
+                <li class="px-5 py-3 hover:bg-primary">
+                  <a
+                    href="https://southamptonroofrepairs.uk/commercial-roofing/"
+                    class="text-[13px] font-medium"
+                  >
+                    Commercial Roofing</a
+                  >
+                </li>
+                <li class="px-5 py-3 hover:bg-primary">
+                  <a
+                    href="https://southamptonroofrepairs.uk/chimney-works/"
+                    class="text-[13px] font-medium"
+                  >
+                    Chimney Works</a
+                  >
+                </li>
+                <li class="px-5 py-3 hover:bg-primary">
+                  <a
+                    href="https://southamptonroofrepairs.uk/fascias-soffits-guttering/"
+                    class="text-[13px] font-medium"
+                    >Fascias Soffits Guttering</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <a
+              class="text-white text-[15px] font-bold hover:bg-primary block lg:py-4 py-3 lg:px-6 px-4"
+              href="#testimonials"
+              >Testimonials</a
+            >
+            <a
+              class="text-white text-[15px] font-bold hover:bg-primary block lg:py-4 py-3 lg:px-6 px-4"
+              href="#contact"
+              >Contact Us</a
+            >
+          </div>
+          <div>
+            <button
+              class="text-sm lg:text-base py-3 lg:py-4 px-5 lg:px-6 bg-primary hover:text-primary transition-all duration-200 ease-in-out hover:bg-white group text-white font-bold flex gap-3 items-center uppercase"
+            >
+              Get A Quote
+              <span>
+                <svg
+                  class="w-[15px] lg:w-[20px]"
+                  width="20"
+                  height="16"
+                  viewBox="0 0 10 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="group-hover:fill-primary transition-all duration-200 ease-in-out"
+                    d="M0 3.98129C0 3.78238 0.0790177 3.59161 0.21967 3.45096C0.360322 3.31031 0.551088 3.23129 0.75 3.23129H6.69L4.72 1.26129C4.58752 1.11912 4.5154 0.93107 4.51883 0.736769C4.52225 0.542468 4.60097 0.357083 4.73838 0.21967C4.87579 0.0822571 5.06118 0.00354506 5.25548 0.000116847C5.44978 -0.00331137 5.63783 0.0688118 5.78 0.201292L9.03 3.45129C9.17045 3.59192 9.24934 3.78254 9.24934 3.98129C9.24934 4.18004 9.17045 4.37067 9.03 4.51129L5.78 7.76129C5.63783 7.89377 5.44978 7.9659 5.25548 7.96247C5.06118 7.95904 4.87579 7.88033 4.73838 7.74291C4.60097 7.6055 4.52225 7.42011 4.51883 7.22581C4.5154 7.03151 4.58752 6.84347 4.72 6.70129L6.69 4.73129H0.75C0.551088 4.73129 0.360322 4.65227 0.21967 4.51162C0.0790177 4.37097 0 4.1802 0 3.98129Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ROOFING SECTION -->
+    <section class="lg:py-20 pt-10 pb-8">
+      <div class="container mx-auto px-5 2xl:max-w-[1240px] xl:py-5">
+        <div class="flex flex-col lg:flex-row gap-5 items-center">
+          <div
+            class="w-full relative xl:pe-12 lg:pe-8 border-b-[2px] border-primary pb-7 lg:pb-0 lg:border-b-[0px]"
+          >
+            <div
+              class="border-l-[2px] border-primary right-[-2%] absolute top-0 h-full w-[2px] hidden lg:block"
+            ></div>
+            <h3
+              class="lg:text-[45px] sm:text-[32px] text-[23px] font-bold sm:mb-2 text-primary leading-[1.3em]"
+            >
+              The Only Roofing Company You Need to Call
+            </h3>
+            <p
+              class="lg:text-[18px] sm:text-base text-[14px] text-[#4B4B4B] font-normal py-3 ff_redhat"
+            >
+              At Southampton Roof Repairs, we’re committed to providing
+              customers with the best roofing services at prices that won’t
+              break the bank. Whether your roof needs fixing or replacing, or
+              you require services, like chimney works, give us a call. We work
+              tirelessly to deliver a solution that aligns with our customers’
+              requirements and budgets.
+            </p>
+            <h4
+              class="lg:text-[26px] text-[20px] font-bold lg:mt-7 mt-3 sm:mb-2 lg:leading-[1.3em]"
+            >
+              For a FREE, no-obligation quotation, call our team today on
+              <a class="text-primary text-nowrap" href="tel:07885810540">
+                07885 810540
+              </a>
+            </h4>
+          </div>
+          <div class="lg:w-[50%] mt-5 lg:mt-0 h-full">
+            <div class="lg:ps-8">
+              <img
+                class="w-[60px] h-[60px]"
+                src="./assets/img/quote.svg"
+                alt="quote"
+              />
+              <p
+                class="text-[18px] text-[#4B4B4B] font-bold leading-[1.4em] sm:my-8 my-5"
+              >
+                <i> "We were blown away by the service we received. </i>
+              </p>
+              <p class="text-[#4B4B4B] tetx-[18px] font-normal sm:mb-10 mb-7">
+                <i>
+                  Our leaky roof was quickly taken care of, and the guys really
+                  knew what they were doing.”
+                </i>
+              </p>
+              <p class="text-[20px] font-bold text-primary leading-[1.2em]">
+                J. Earum
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- SMOOTH SLIDER -->
     <section
       class="bg-[#1E1A3C] text-primary lg:text-[20px] text-[18px] font-bold ff_redhat lg:py-3 py-5"
@@ -528,66 +800,7 @@
         </div>
       </div>
     </section>
-    <!-- ROOFING SECTION -->
-    <section class="lg:py-20 pt-10 pb-8">
-      <div class="container mx-auto px-5 2xl:max-w-[1240px] xl:py-5">
-        <div class="flex flex-col lg:flex-row gap-5 items-center">
-          <div
-            class="w-full relative xl:pe-12 lg:pe-8 border-b-[2px] border-primary pb-7 lg:pb-0 lg:border-b-[0px]"
-          >
-            <div
-              class="border-l-[2px] border-primary right-[-2%] absolute top-0 h-full w-[2px] hidden lg:block"
-            ></div>
-            <h3
-              class="lg:text-[45px] sm:text-[32px] text-[23px] font-bold sm:mb-2 text-primary leading-[1.3em]"
-            >
-              The Only Roofing Company You Need to Call
-            </h3>
-            <p
-              class="lg:text-[18px] sm:text-base text-[14px] text-[#4B4B4B] font-normal py-3 ff_redhat"
-            >
-              At Southampton Roof Repairs, we’re committed to providing
-              customers with the best roofing services at prices that won’t
-              break the bank. Whether your roof needs fixing or replacing, or
-              you require services, like chimney works, give us a call. We work
-              tirelessly to deliver a solution that aligns with our customers’
-              requirements and budgets.
-            </p>
-            <h4
-              class="lg:text-[26px] text-[20px] font-bold lg:mt-7 mt-3 sm:mb-2 lg:leading-[1.3em]"
-            >
-              For a FREE, no-obligation quotation, call our team today on
-              <a class="text-primary text-nowrap" href="tel:07885810540">
-                07885 810540
-              </a>
-            </h4>
-          </div>
-          <div class="lg:w-[50%] mt-5 lg:mt-0 h-full">
-            <div class="lg:ps-8">
-              <img
-                class="w-[60px] h-[60px]"
-                src="./assets/img/quote.svg"
-                alt="quote"
-              />
-              <p
-                class="text-[18px] text-[#4B4B4B] font-bold leading-[1.4em] sm:my-8 my-5"
-              >
-                <i> "We were blown away by the service we received. </i>
-              </p>
-              <p class="text-[#4B4B4B] tetx-[18px] font-normal sm:mb-10 mb-7">
-                <i>
-                  Our leaky roof was quickly taken care of, and the guys really
-                  knew what they were doing.”
-                </i>
-              </p>
-              <p class="text-[20px] font-bold text-primary leading-[1.2em]">
-                J. Earum
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
     <!-- COUNT SECTION -->
     <section class="sm:pt-20 pt-16 relative z-10">
       <div class="container mx-auto px-5 2xl:max-w-[1240px] xl:py-5">
@@ -1669,6 +1882,63 @@
             },
           },
         ],
+      });
+      const toggle = document.getElementById("service_drop_down_toggle");
+      const content = document.getElementById("content");
+
+      // Show content when hovering over the toggle
+      toggle.addEventListener("mouseover", function () {
+        content.style.display = "block";
+      });
+
+      // Keep content visible when hovering over the content itself
+      content.addEventListener("mouseover", function () {
+        content.style.display = "block";
+      });
+
+      // Hide content when leaving both toggle and content
+      toggle.addEventListener("mouseleave", function () {
+        setTimeout(() => {
+          if (!content.matches(":hover") && !toggle.matches(":hover")) {
+            content.style.display = "none";
+          }
+        }, 100); // Slight delay to ensure hover detection works
+      });
+
+      content.addEventListener("mouseleave", function () {
+        setTimeout(() => {
+          if (!toggle.matches(":hover")) {
+            content.style.display = "none";
+          }
+        }, 100); // Slight delay for better UX
+      });
+      window.addEventListener("scroll", () => {
+        const div = document.getElementById("scroll-fixed");
+
+        if (window.scrollY > 25) {
+          div.style.position = "fixed";
+          div.style.boxShadow = "0px 3px 10px 0px rgba(0, 0, 0, 0.16)";
+          div.style.paddingTop = "0px";
+        } else {
+          div.style.position = "absolute";
+          div.style.paddingTop = "20px";
+          div.style.boxShadow = "none";
+        }
+      });
+      // SIDEBAR
+
+      const openSidebar = document.getElementById("openSidebar");
+      const closeSidebar = document.getElementById("closeSidebar");
+      const sidebar = document.getElementById("sidebar");
+
+      // Open sidebar
+      openSidebar.addEventListener("click", () => {
+        sidebar.style.right = "0px";
+      });
+
+      // Close sidebar
+      closeSidebar.addEventListener("click", () => {
+        sidebar.style.right = "-300px";
       });
     </script>
   </body>
